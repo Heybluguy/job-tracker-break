@@ -6,8 +6,9 @@ describe "User sees all categories" do
     category_two = Category.create!(title: "Transportation")
 
     visit categories_path
-    save_and_open_page
+
     expect(page).to have_content("Education")
   end
 
 end
+

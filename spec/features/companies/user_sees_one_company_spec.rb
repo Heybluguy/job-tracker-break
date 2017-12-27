@@ -12,3 +12,4 @@ describe "User sees one company" do
     expect(page).to have_content("Developer")
   end
 end
+

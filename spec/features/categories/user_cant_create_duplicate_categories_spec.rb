@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe "as a user" do
-  context "when I try to create a category that already exists" do
+  scenario "when I try to create a category that already exists" do
     it "im brought back to create category form page" do
       category = Category.create(title: "Automotive")
 
