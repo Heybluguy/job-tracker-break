@@ -2,4 +2,9 @@
 
 <div>
 <h1><%= @category.title %></h1>
+<% @category.jobs.each do |job| %>
+  <p><%= job.title %></p>
+<% end %>
+
+
 </div>

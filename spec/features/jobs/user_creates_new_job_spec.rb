@@ -32,8 +32,6 @@ describe "as a user" do
       fill_in "job[description]", with: "So fun!"
       fill_in "job[level_of_interest]", with: 80
       fill_in "job[city]", with: "Denver"
-      # save_and_open_page
-
       select('Production', :from => 'job[category_id]')
 
       click_button "Create"
