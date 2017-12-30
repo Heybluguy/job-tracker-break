@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe "as a user" do
-  it "I can update a job" do
+  scenario "I can update a job" do
     company = Company.create!(name: "ESPN")
     category = Category.create!(title: "Engineering")
     job = company.jobs.create!(title: "Developer", level_of_interest: 70, city: "Denver")

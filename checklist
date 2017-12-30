@@ -1,9 +1,9 @@
 The rubric below describes additional functionality that you will need to add to this application, as well as code standards that will be expected.
 
 Jobs
-[] A user can update a job
+[x] A user can update a job
 
-[] A user can delete a job
+[x] A user can delete a job
 
 Categories
 [x] The user can create a new Category by filling out a form. Each Category has a title (e.g. “Web Development”, “Education”, “Finance”).

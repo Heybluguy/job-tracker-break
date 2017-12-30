@@ -28,7 +28,7 @@ describe "as a user" do
       category = Category.create!(title: "Accounting")
       visit new_company_job_path(company)
 
-      fill_in "job[title]", with: "Production"
+      fill_in "job[title]", with: "Makeup Artist"
       fill_in "job[description]", with: "So fun!"
       fill_in "job[level_of_interest]", with: 80
       fill_in "job[city]", with: "Denver"
@@ -37,7 +37,7 @@ describe "as a user" do
       click_button "Create"
 
       expect(current_path).to eq("/companies/#{company.id}/jobs/#{Job.last.id}")
-      expect(page).to have_content("Production")
+      expect(page).to have_content("Makeup Artist")
       expect(page).to have_content("ESPN")
       expect(page).to have_content("80")
       expect(page).to have_content("Denver")
