@@ -18,7 +18,10 @@ Company: <%= link_to @job.company.name, company_path(@job.company) %>
   <%= f.submit "Post Comment" %>
 <% end %>
 
-<% @job.comments.each do |comment| %>
-  <%= comment.content %>
-  <%= comment.created_at %>
+<% @job.comments.reverse_each do |comment| %>
+  <p>
+    <%= comment.content %>
+    <li>Created At <%= comment.created_at %></li>
+    <li>Updated At <%=  comment.updated_at %></li>
+  </p><br>
 <% end %>
