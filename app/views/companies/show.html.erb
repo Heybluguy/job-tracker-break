@@ -21,8 +21,11 @@ All Jobs for <strong><%= @company.name %></strong>
 
 <h4>Contact Information</h4>
 <% @company.contacts.each do |contact| %>
+  <p>
     <%= contact.full_name %><br>
     <%= contact.position %><br>
     <%= contact.email %><br>
+    <%= @company.name %>
+  </p>
 <% end %>
 

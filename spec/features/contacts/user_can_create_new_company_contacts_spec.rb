@@ -10,6 +10,11 @@ describe "as a user" do
       fill_in "contact[position]", with: "Lead poop shoveler"
       fill_in "contact[email]", with: "heybluguy@aol.com"
       click_on "Submit"
+
+      fill_in "contact[full_name]", with: "Penelope Santorini"
+      fill_in "contact[position]", with: "Hiring Manager"
+      fill_in "contact[email]", with: "penelope@wooo.com"
+      click_on "Submit"
 save_and_open_page
       expect(current_path).to eq(company_path(company))
       expect(page).to have_content("Luis Senior")
