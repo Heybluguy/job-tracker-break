@@ -35,7 +35,7 @@ Contacts
 [x] When the user submits a new contact, they are redirected back to the page for that specific company and the contact appears on the page.
 
 Analysis
-[] The user can visit /jobs?sort=location to view a list of the jobs sorted by city.
+[x] The user can visit /jobs?sort=location to view a list of the jobs sorted by city.
 
 [] The user can visit /dashboard to see
 

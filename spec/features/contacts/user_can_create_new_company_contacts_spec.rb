@@ -15,7 +15,7 @@ describe "as a user" do
       fill_in "contact[position]", with: "Hiring Manager"
       fill_in "contact[email]", with: "penelope@wooo.com"
       click_on "Submit"
-save_and_open_page
+
       expect(current_path).to eq(company_path(company))
       expect(page).to have_content("Luis Senior")
       expect(page).to have_content("Lead poop shoveler")
